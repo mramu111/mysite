@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>insert question page</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript" src="datetimepicker.js">
+</script>
+<form action="/polls/addquestion/" method="post">
+{% csrf_token %}
+<table>
+<tr>
+    <td> question:</td> 
+    <td> <input type="text" name="question"> </td>
+</tr>
+<tr>
+    <td> pub_date:</td> 
+    <td><input type="Text" id="demo1" maxlength="25" size="25",name="pub_date"><a   href="javascript:NewCal('demo1','ddmmmyyyy',true,24)"><img src="cal.gif" width="16" height="16"         border="0" alt="Pick a date"></a>
+    </td>
+</tr>
+<tr>
+    <td>    <input type="submit" value="add"/></td>
+    <td></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
